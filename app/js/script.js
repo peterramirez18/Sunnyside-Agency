@@ -25,3 +25,16 @@ Menu.addEventListener('click', function(){
         Menu.classList.add('navopen');
     }
 });
+
+
+window.addEventListener('click', function(e){
+    console.log((e.target));
+    if(e.target == Hamburguer){
+        Menu.classList.add('navopen');
+    }
+
+    else{
+        Menu.classList.remove('navopen');
+    }
+    
+})
