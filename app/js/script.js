@@ -14,3 +14,14 @@ Hamburguer.addEventListener('click', function(){
         Menu.classList.add('navopen');
     }
 });
+
+
+Menu.addEventListener('click', function(){
+    if (Menu.classList.contains('navopen')){
+        Menu.classList.remove('navopen');
+    }
+
+    else{
+        Menu.classList.add('navopen');
+    }
+});
