@@ -1,0 +1,94 @@
+.header{
+    background-color: $Blue;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2.875rem;
+    height: 6rem;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+
+    @media (max-width: 725px) {
+        padding: 0rem 1rem;
+    }
+
+    & .nav{
+        display: flex;
+        column-gap: 3.125rem;
+        align-items: center;
+
+       
+
+        @media (max-width: 725px) {
+            position: absolute;
+            background: $White;
+            flex-direction: column;
+            top: 7rem;
+            right: 0;
+            left: 0;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            row-gap: 2rem;
+            padding: 2rem 0rem;
+            transform: translateX(100vw);
+            transition: all 500ms ease-in;
+
+            
+
+            &::before{
+                content: "";
+                border-style: solid;
+                border-width: 0 0 2rem 2rem;
+                border-color: transparent transparent $White transparent;
+                position: absolute;
+                right: 0;
+                top: -1.5rem;
+            }
+        }
+        
+        & a{
+            text-decoration: none;
+            color: $White;
+            font-size: 1rem;
+            &:hover{
+                color: $Yellow;
+            }
+
+            @media (max-width: 725px) {
+                color: $DarkBlue;
+            }
+
+            &:nth-child(4){
+                background-color: $White;
+                color: $VeryDark;
+                font-family: $font2;
+                padding: 1rem 1.8rem;
+                border-radius: 3rem;
+                text-transform: uppercase;
+
+                &:hover{
+                    color: white;
+                    background-color: rgba(255, 255, 255, 0.308);
+                }
+
+                @media (max-width: 725px) {
+                    background-color: $Yellow;
+                    color: $VeryDark;
+                }
+            }
+
+            
+        }
+    }
+
+    & .navopen{
+        @media (max-width: 725px) {
+            transform: translateX(0vw);
+            transition: all 500ms ease-in-out;
+        }
+    }
+
+    
+}

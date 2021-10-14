@@ -1,0 +1,38 @@
+
+
+.slider{
+    background-image: url(../../images/desktop/image-header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding-bottom: 5rem;
+
+    @media (max-width: 725px) {
+    }
+
+
+
+    & h1{
+        color: $White;
+        font-family: $font2;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        line-height: 3rem !important;
+        
+        margin-bottom: 3rem;
+
+        @media (max-width: 725px) {
+            font-size: 2.375rem;
+            margin-bottom: 0rem;
+        }
+    }
+}

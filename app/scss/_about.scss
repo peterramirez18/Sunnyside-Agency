@@ -1,0 +1,125 @@
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "text1      img1"
+    "img2      text2"
+    ;
+
+    width: 100%;
+
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "img1"
+        "text1"
+        "img2"
+        "text2"
+    }
+
+    .box{
+        @media (max-width: 725px) {
+            text-align: center;
+        }
+
+        & h2{
+            color: $VeryDark;
+            font-family: $font2;
+            font-weight: 900;
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        & p{
+            color: $DarkGrayis;
+            line-height: 1.6rem;
+            margin-top: 1.6rem;  
+            font-size: 1rem;
+        }
+
+  
+
+        & button{
+            margin-top: 1.6rem;
+            font-family: $font2;
+            font-weight: 900;
+            z-index: 5;
+            text-transform: uppercase;
+            position: relative;
+            cursor: pointer;
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+                margin-top: 1.7rem;
+            }
+
+            
+
+            &::before{
+                content: '';
+                height: 0.5rem;
+                width: 120%;
+                border-radius: 1rem;
+                background-color: $Yellow;
+                display: block;
+                position: absolute;
+                z-index: -1;
+                bottom: -1px;
+                left: -5px;
+                opacity: 0.3;
+
+                @media (max-width: 1024px) {
+                    left: -9px;
+                }
+            }
+        }
+
+        &:last-child{
+            & button {
+                &::before{
+                    background-color: $Pink;
+                }
+            }
+        }
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+
+        &:nth-child(1){
+            grid-area: text1;
+            padding: 10rem;
+            @media (max-width: 725px) {
+                padding: 4.25rem 1rem;
+            }
+        }
+
+        &:nth-child(4){
+            grid-area: text2;
+            padding: 10rem;
+            @media (max-width: 725px) {
+                padding: 4.25rem 1rem;
+            }
+        }
+
+        &:nth-child(2){
+            grid-area: img1;
+            background-image: url(/images/desktop/image-transform.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &:nth-child(3){
+            grid-area: img2;
+            background-image: url(/images/desktop/image-stand-out.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
