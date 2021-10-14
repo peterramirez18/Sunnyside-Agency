@@ -42,3 +42,25 @@
         }
     }
 }
+
+
+.attribution{
+    background-color: $Green;
+    color: $White;
+    padding: 1rem;
+
+    & a {
+        text-decoration: none;
+        color: $Blue !important;
+        margin-left: 0.5rem;
+
+        &:hover{
+            color: $Pink !important;
+        }
+
+        &:first-child{
+            margin-right: 2rem;
+ 
+        }
+    }
+}

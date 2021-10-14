@@ -597,4 +597,24 @@ button {
   -webkit-filter: invert(95%) sepia(99%) saturate(0%) hue-rotate(208deg) brightness(124%) contrast(100%);
           filter: invert(95%) sepia(99%) saturate(0%) hue-rotate(208deg) brightness(124%) contrast(100%);
 }
+
+.attribution {
+  background-color: #25564b;
+  color: white;
+  padding: 1rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #3EBFFF !important;
+  margin-left: 0.5rem;
+}
+
+.attribution a:hover {
+  color: #fe7867 !important;
+}
+
+.attribution a:first-child {
+  margin-right: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
