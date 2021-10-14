@@ -207,6 +207,20 @@ button {
   }
 }
 
+.about .box {
+  max-height: 36.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 725px) {
   .about .box {
     text-align: center;
@@ -282,7 +296,7 @@ button {
 
 @media (max-width: 725px) {
   .about .box:nth-child(1) {
-    padding: 4.25rem 1rem;
+    padding: 0rem 2rem;
   }
 }
 
@@ -315,5 +329,272 @@ button {
   background-image: url(/images/desktop/image-stand-out.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .services {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.services .box {
+  min-height: 36.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25rem 10rem 2rem 10rem;
+}
+
+@media (max-width: 725px) {
+  .services .box {
+    padding: 25rem 1rem 4rem 1rem;
+  }
+}
+
+.services .box h2 {
+  color: #25564b;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.services .box p {
+  color: #25564b;
+  line-height: 1.6rem;
+  margin-top: 1.6rem;
+  font-size: 1rem;
+}
+
+.services .box:last-child h2, .services .box:last-child p {
+  color: #19536b;
+}
+
+.services .box:first-child {
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.services .box:last-child {
+  background-image: url(/images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.testimonials {
+  background-color: white;
+  min-height: 47.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 5rem 0rem;
+  }
+}
+
+.testimonials h1 {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #a7abae;
+  letter-spacing: 0.3rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 725px) {
+  .testimonials h1 {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.testimonials .comments {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .testimonials .comments {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+.testimonials .comments .comment img {
+  border-radius: 50%;
+  width: 4.375rem;
+}
+
+.testimonials .comments .comment p {
+  color: #5a636c;
+  width: 20rem;
+  line-height: 1.6rem;
+  margin-top: 1.6rem;
+  font-size: 1rem;
+  margin-bottom: 4.75rem;
+}
+
+@media (max-width: 725px) {
+  .testimonials .comments .comment p {
+    margin-bottom: 2.75rem;
+  }
+}
+
+.testimonials .comments .comment h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.testimonials .comments .comment h3 {
+  color: #818498;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.gallery {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.gallery div {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 375px) {
+  .gallery div {
+    height: 25vh;
+  }
+}
+
+.gallery div:nth-child(1) {
+  background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+}
+
+.gallery div:nth-child(2) {
+  background-image: url(/images/desktop/image-gallery-orange.jpg);
+}
+
+.gallery div:nth-child(3) {
+  background-image: url(/images/desktop/image-gallery-cone.jpg);
+}
+
+.gallery div:nth-child(4) {
+  background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.footer {
+  background-color: #90D4C5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 2rem;
+  padding: 4rem 0rem;
+}
+
+.footer > img {
+  -webkit-filter: invert(39%) sepia(9%) saturate(2377%) hue-rotate(117deg) brightness(50%) contrast(84%);
+          filter: invert(39%) sepia(9%) saturate(2377%) hue-rotate(117deg) brightness(50%) contrast(84%);
+}
+
+.footer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3.125rem;
+          column-gap: 3.125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #25564b;
+  font-size: 1rem;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footer .socialmedia img {
+  cursor: pointer;
+}
+
+.footer .socialmedia img:hover {
+  -webkit-filter: invert(95%) sepia(99%) saturate(0%) hue-rotate(208deg) brightness(124%) contrast(100%);
+          filter: invert(95%) sepia(99%) saturate(0%) hue-rotate(208deg) brightness(124%) contrast(100%);
 }
 /*# sourceMappingURL=style.css.map */

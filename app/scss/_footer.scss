@@ -1,0 +1,44 @@
+.footer{
+    background-color: $GreenLight;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 4rem 0rem;
+
+    & > img{
+        filter: invert(39%) sepia(9%) saturate(2377%) hue-rotate(117deg) brightness(50%) contrast(84%);
+    }
+
+
+    & .nav{
+        display: flex;
+        column-gap: 3.125rem;
+        align-items: center;
+
+        }
+        
+        & a{
+            text-decoration: none;
+            color: $Green;
+            font-size: 1rem;
+            &:hover{
+                color: $White;
+        }
+        
+    }
+
+    & .socialmedia{
+        display: flex;
+        column-gap: 2rem;
+        margin-top: 2rem;
+
+        & img{
+            cursor: pointer;
+            &:hover{
+                filter: invert(95%) sepia(99%) saturate(0%) hue-rotate(208deg) brightness(124%) contrast(100%); 
+            }
+        }
+    }
+}

@@ -21,7 +21,11 @@
         "text2"
     }
 
-    .box{
+    & .box{
+        max-height: 36.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         @media (max-width: 725px) {
             text-align: center;
         }
@@ -95,7 +99,7 @@
             grid-area: text1;
             padding: 10rem;
             @media (max-width: 725px) {
-                padding: 4.25rem 1rem;
+                padding: 0rem 2rem;
             }
         }
 
