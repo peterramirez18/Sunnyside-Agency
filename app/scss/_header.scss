@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0rem 2.875rem;
-    height: 6rem;
+    height: 7.8rem;
     position: fixed;
     width: 100%;
     z-index: 20;
@@ -14,12 +14,14 @@
         padding: 0rem 1rem;
     }
 
-    & .nav{
-        display: flex;
-        column-gap: 3.125rem;
-        align-items: center;
+    & .header_logo{
+        width: 10.4rem;
+    }
 
-       
+    &_nav{
+        display: flex;
+        column-gap: 2.9rem;
+        align-items: center;
 
         @media (max-width: 725px) {
             position: absolute;
@@ -35,8 +37,6 @@
             transform: translateX(100vw);
             transition: all 500ms ease-in;
 
-            
-
             &::before{
                 content: "";
                 border-style: solid;
@@ -51,7 +51,7 @@
         & a{
             text-decoration: none;
             color: $White;
-            font-size: 1rem;
+            font-size: 1.15rem;
             &:hover{
                 color: $Yellow;
             }
@@ -64,7 +64,7 @@
                 background-color: $White;
                 color: $VeryDark;
                 font-family: $font2;
-                padding: 1rem 1.8rem;
+                padding: 1.1rem 1.5rem;
                 border-radius: 3rem;
                 text-transform: uppercase;
 

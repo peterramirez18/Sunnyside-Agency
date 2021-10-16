@@ -4,17 +4,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 2rem;
+    row-gap: 3rem;
     padding: 4rem 0rem;
 
-    & > img{
+    & .logo{
         filter: invert(39%) sepia(9%) saturate(2377%) hue-rotate(117deg) brightness(50%) contrast(84%);
+        width: 11rem;
     }
 
 
     & .nav{
         display: flex;
-        column-gap: 3.125rem;
+        column-gap: 4rem;
         align-items: center;
 
         }
@@ -32,7 +33,7 @@
     & .socialmedia{
         display: flex;
         column-gap: 2rem;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
 
         & img{
             cursor: pointer;

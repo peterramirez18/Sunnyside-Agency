@@ -9,12 +9,12 @@
 
 
     & .box{
-        min-height: 36.25rem;
+        min-height: 37.5rem;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 25rem 10rem 2rem 10rem;
+        padding: 25rem 11rem 2rem 11rem;
 
         @media (max-width: 725px) {
             padding: 25rem 1rem 4rem 1rem;

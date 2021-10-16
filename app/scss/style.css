@@ -46,7 +46,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0rem 2.875rem;
-  height: 6rem;
+  height: 7.8rem;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -58,19 +58,23 @@ button {
   }
 }
 
-.header .nav {
+.header .header_logo {
+  width: 10.4rem;
+}
+
+.header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 3.125rem;
-          column-gap: 3.125rem;
+  -webkit-column-gap: 2.9rem;
+          column-gap: 2.9rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 @media (max-width: 725px) {
-  .header .nav {
+  .header_nav {
     position: absolute;
     background: white;
     -webkit-box-orient: vertical;
@@ -89,7 +93,7 @@ button {
     -webkit-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
   }
-  .header .nav::before {
+  .header_nav::before {
     content: "";
     border-style: solid;
     border-width: 0 0 2rem 2rem;
@@ -100,38 +104,38 @@ button {
   }
 }
 
-.header .nav a {
+.header_nav a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
-.header .nav a:hover {
+.header_nav a:hover {
   color: #fad400;
 }
 
 @media (max-width: 725px) {
-  .header .nav a {
+  .header_nav a {
     color: #19536b;
   }
 }
 
-.header .nav a:nth-child(4) {
+.header_nav a:nth-child(4) {
   background-color: white;
   color: #23303e;
   font-family: "Fraunces", serif;
-  padding: 1rem 1.8rem;
+  padding: 1.1rem 1.5rem;
   border-radius: 3rem;
   text-transform: uppercase;
 }
 
-.header .nav a:nth-child(4):hover {
+.header_nav a:nth-child(4):hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.308);
 }
 
 @media (max-width: 725px) {
-  .header .nav a:nth-child(4) {
+  .header_nav a:nth-child(4) {
     background-color: #fad400;
     color: #23303e;
   }
@@ -148,7 +152,7 @@ button {
 
 .slider {
   background-image: url(../../images/desktop/image-header.jpg);
-  height: 100vh;
+  height: 103vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,24 +170,27 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 0rem;
   padding-bottom: 5rem;
 }
 
 .slider h1 {
   color: white;
   font-family: "Fraunces", serif;
-  font-size: 3rem;
+  font-size: 3.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  line-height: 3rem !important;
-  margin-bottom: 3rem;
+  letter-spacing: 0.52rem;
+  line-height: 0rem;
+  margin-bottom: 6.3rem;
+  -webkit-transform: translateY(-1.3rem);
+          transform: translateY(-1.3rem);
 }
 
 @media (max-width: 725px) {
   .slider h1 {
     font-size: 2.375rem;
     margin-bottom: 0rem;
+    line-height: 3rem;
   }
 }
 
@@ -194,7 +201,7 @@ button {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "text1      img1" "img2      text2";
+      grid-template-areas: "text1      img1" "img2      text2";
   width: 100%;
 }
 
@@ -204,12 +211,12 @@ button {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "img1" "text1" "img2" "text2";
+        grid-template-areas: "img1" "text1" "img2" "text2";
   }
 }
 
 .about .box {
-  max-height: 36.25rem;
+  max-height: 38rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,19 +239,19 @@ button {
   color: #23303e;
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
 }
 
 .about .box p {
   color: #818498;
-  line-height: 1.6rem;
-  margin-top: 1.6rem;
+  line-height: 1.9rem;
+  margin-top: 2.1rem;
   font-size: 1rem;
 }
 
 .about .box button {
-  margin-top: 1.6rem;
+  margin-top: 2.6rem;
   font-family: "Fraunces", serif;
   font-weight: 900;
   z-index: 5;
@@ -253,10 +260,7 @@ button {
   cursor: pointer;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
-}
-
-.about .box button:hover {
-  margin-top: 1.7rem;
+  font-size: 0.9rem;
 }
 
 .about .box button::before {
@@ -305,7 +309,7 @@ button {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: text2;
-  padding: 10rem;
+  padding: 10rem 10rem 10.2rem 7rem;
 }
 
 @media (max-width: 725px) {
@@ -347,7 +351,7 @@ button {
 }
 
 .services .box {
-  min-height: 36.25rem;
+  min-height: 37.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +363,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25rem 10rem 2rem 10rem;
+  padding: 25rem 11rem 2rem 11rem;
 }
 
 @media (max-width: 725px) {
@@ -401,7 +405,7 @@ button {
 
 .testimonials {
   background-color: white;
-  min-height: 47.25rem;
+  min-height: 48.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,11 +429,11 @@ button {
 
 .testimonials h1 {
   font-family: "Fraunces", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #a7abae;
-  letter-spacing: 0.3rem;
-  margin-bottom: 5rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 5.5rem;
 }
 
 @media (max-width: 725px) {
@@ -439,12 +443,12 @@ button {
   }
 }
 
-.testimonials .comments {
+.testimonials_comments {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
+  gap: 3.8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -452,40 +456,47 @@ button {
 }
 
 @media (max-width: 1024px) {
-  .testimonials .comments {
+  .testimonials_comments {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     gap: 5rem;
   }
 }
 
-.testimonials .comments .comment img {
+.testimonials_comments .comment img {
   border-radius: 50%;
   width: 4.375rem;
+  margin-bottom: 2rem;
 }
 
-.testimonials .comments .comment p {
+@media (max-width: 725px) {
+  .testimonials_comments .comment img {
+    margin-bottom: 0rem;
+  }
+}
+
+.testimonials_comments .comment p {
   color: #5a636c;
   width: 20rem;
-  line-height: 1.6rem;
+  line-height: 2rem;
   margin-top: 1.6rem;
   font-size: 1rem;
   margin-bottom: 4.75rem;
 }
 
 @media (max-width: 725px) {
-  .testimonials .comments .comment p {
+  .testimonials_comments .comment p {
     margin-bottom: 2.75rem;
   }
 }
 
-.testimonials .comments .comment h2 {
+.testimonials_comments .comment h2 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
-.testimonials .comments .comment h3 {
+.testimonials_comments .comment h3 {
   color: #818498;
   font-size: 1rem;
   font-weight: 500;
@@ -509,7 +520,7 @@ button {
 
 .gallery div {
   width: 100%;
-  height: 50vh;
+  height: 58vh;
   background-size: cover;
   background-position: center center;
 }
@@ -551,21 +562,22 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 2rem;
+  row-gap: 3rem;
   padding: 4rem 0rem;
 }
 
-.footer > img {
+.footer .logo {
   -webkit-filter: invert(39%) sepia(9%) saturate(2377%) hue-rotate(117deg) brightness(50%) contrast(84%);
           filter: invert(39%) sepia(9%) saturate(2377%) hue-rotate(117deg) brightness(50%) contrast(84%);
+  width: 11rem;
 }
 
 .footer .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 3.125rem;
-          column-gap: 3.125rem;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -587,7 +599,7 @@ button {
   display: flex;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .footer .socialmedia img {
@@ -617,5 +629,15 @@ button {
 
 .attribution a:first-child {
   margin-right: 2rem;
+}
+
+.examples {
+  width: 100vw !important;
+  position: absolute;
+  z-index: 1000;
+  margin: 0;
+  opacity: 0.5;
+  -webkit-filter: invert(0%) sepia(99%) saturate(3000%) hue-rotate(8deg) brightness(20%) contrast(124%);
+          filter: invert(0%) sepia(99%) saturate(3000%) hue-rotate(8deg) brightness(20%) contrast(124%);
 }
 /*# sourceMappingURL=style.css.map */
