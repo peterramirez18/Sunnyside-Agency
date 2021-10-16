@@ -152,7 +152,7 @@ button {
 
 .slider {
   background-image: url(../../images/desktop/image-header.jpg);
-  height: 103vh;
+  height: 87vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -629,15 +629,5 @@ button {
 
 .attribution a:first-child {
   margin-right: 2rem;
-}
-
-.examples {
-  width: 100vw !important;
-  position: absolute;
-  z-index: 1000;
-  margin: 0;
-  opacity: 0.5;
-  -webkit-filter: invert(0%) sepia(99%) saturate(3000%) hue-rotate(8deg) brightness(20%) contrast(124%);
-          filter: invert(0%) sepia(99%) saturate(3000%) hue-rotate(8deg) brightness(20%) contrast(124%);
 }
 /*# sourceMappingURL=style.css.map */
