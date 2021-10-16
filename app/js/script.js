@@ -29,12 +29,12 @@ Menu.addEventListener('click', function(){
 
 window.addEventListener('click', function(e){
     console.log((e.target));
-    if(e.target == Hamburguer){
-        Menu.classList.add('navopen');
+    if(e.target !== Hamburguer){
+        Menu.classList.remove('navopen');
     }
 
     else{
-        Menu.classList.remove('navopen');
+        
     }
     
 })
